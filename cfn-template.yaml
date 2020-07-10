@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Parameters: {}
+
+Mappings: {}
+
+Conditions: {}
+
+Outputs: {}
+
+Resources:
+
+    Type: AWS::Cloud9::EnvironmentEC2
+    Properties: 
+        AutomaticStopTimeMinutes: 1440
+        Description: "Cloud9 Environment"
+        InstanceType: t2.micro
+        Name: "Cloud9-workstation"
+        SubnetId: String
