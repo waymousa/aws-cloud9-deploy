@@ -10,10 +10,10 @@ Outputs: {}
 
 Resources:
 
-    Type: AWS::Cloud9::EnvironmentEC2
-    Properties: 
-        AutomaticStopTimeMinutes: 1440
-        Description: "Cloud9 Environment"
-        InstanceType: t2.micro
-        Name: "Cloud9-workstation"
-        SubnetId: String
+    Cloud9:
+        Type: AWS::Cloud9::EnvironmentEC2
+        Properties: 
+            AutomaticStopTimeMinutes: 1440
+            Description: "Cloud9 Environment"
+            InstanceType: t2.micro
+            Name: "Cloud9-workstation"
